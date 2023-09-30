@@ -1,0 +1,36 @@
+.statistics {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: black;
+}
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.stList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 25px;
+    padding: 0;
+}
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 80px;
+    color: black;
+    padding: 15px;
+}
