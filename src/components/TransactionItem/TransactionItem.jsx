@@ -10,7 +10,7 @@ export const TransactionItem = ({ typeItem, idItem, amountItem, currencyItem }) 
 }
 
 TransactionItem.prototype = {
-    key: PropTypes.string.isRequired,
+    idItem: PropTypes.string.isRequired,
     typeItem: PropTypes.string.isRequired,
     amountItem: PropTypes.string.isRequired,
     currencyItem: PropTypes.string.isRequired,

@@ -1,4 +1,5 @@
 import css from "./FriendListItem.module.css"
+import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ name, avatar, isOnline, id })=> {
     const classStatus = isOnline ? css.statusOnline: css.statusOff;
@@ -9,3 +10,10 @@ export const FriendListItem = ({ name, avatar, isOnline, id })=> {
     <p className={css.name}>{name}</p>
   </li>
 }
+
+FriendListItem.prototype = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
+};
